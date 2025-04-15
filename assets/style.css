@@ -1,0 +1,33 @@
+.list-group-item {
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.subtask-item {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+body {
+    background: linear-gradient(#365486, #0f1035);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Perbesar dan pertebal checkbox */
+.form-check-input {
+    border: 2px solid #fff; /* warna putih biar cocok sama tema angkasa */
+    box-shadow: 0 0 3px #000000; /* efek glowing biru seperti bintang */
+}
+
+
