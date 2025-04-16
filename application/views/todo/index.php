@@ -60,6 +60,14 @@
         <button type="button" class="btn btn-primary mb-2 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-family: 'Nunito', sans-serif;">
             New Tasks
         </button>
+        <?php if (empty($tasks)): ?>
+    <div class="card text-center bg-light mb-3" style="font-family: 'Nunito', sans-serif;">
+        <div class="card-body">
+            <h5 class="card-title text-muted">Belum ada tugas</h5>
+            <p class="card-text">Yuk mulai dengan menambahkan tugas baru!</p>
+        </div>
+    </div>
+<?php else: ?> 
             <ol class="list-group">
                 <?php foreach ($tasks as $task): ?>
                     <li class="list-group-item">
@@ -144,6 +152,7 @@
                     </div>
                 <?php endforeach; ?>
             </ol>
+            <?php endif; ?>
         </div>
     </div>
 
